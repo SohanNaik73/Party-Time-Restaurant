@@ -1,0 +1,74 @@
+/* style.css */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Poppins:wght@300;400;500&display=swap');
+
+:root {
+    --accent: #c5a059; /* Elegant Gold */
+    --dark: #121212;   /* Deep Charcoal */
+    --glass: rgba(255, 255, 255, 0.95);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fdfdfd;
+}
+
+h1, h2, .navbar-brand {
+    font-family: 'Playfair Display', serif;
+}
+
+/* THE NAV BAR */
+.navbar {
+    background-color: var(--dark) !important;
+    padding: 1rem 0;
+    transition: all 0.3s ease;
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    color: var(--accent) !important;
+    letter-spacing: 2px;
+}
+
+.nav-link {
+    font-weight: 400;
+    margin: 0 10px;
+    color: #ffffff !important;
+    transition: color 0.3s;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: var(--accent) !important;
+}
+
+
+.carousel-item {
+    height: 70vh; 
+    background: var(--dark);
+}
+
+.carousel-item img {
+    height: 600px;
+    object-fit: cover;
+    opacity: 0.6; 
+}
+
+/* MODERN CARDS */
+.card {
+    border: none;
+    border-radius: 0;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 45px rgba(0,0,0,0.1);
+}
+
+.btn-warning {
+    background-color: var(--accent);
+    border: none;
+    color: white;
+    border-radius: 0;
+    padding: 12px 30px;
+}
